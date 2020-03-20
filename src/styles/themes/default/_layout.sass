@@ -1,15 +1,3 @@
-.application-grid
-    display: grid
-    grid-template-areas: "header" "section-a" "section-b" "footer"
-    grid-template-rows: 4rem 30rem 30rem 20rem
-    &-header
-        grid-area: header
-    &-section-a
-        grid-area: section-a
-    &-section-b
-        grid-area: section-b
-    &-footer
-        grid-area: footer
 
 // HOME PAGE
 .home-grid
@@ -44,7 +32,7 @@
     display: grid
     grid-template-areas: ". . ." ". center ."
     grid-template-columns: 1fr 11fr 1fr
-    grid-template-rows: 10rem 30rem
+    grid-template-rows: 15rem 25rem
     aling-content: center
     &-center
         grid-area: center
@@ -60,3 +48,23 @@
         grid-area: second
     &-third
         grid-area: third
+
+.map-grid
+    display: grid
+    grid-template-areas: ". side map ."
+    grid-template-columns: 1fr 3fr 6fr 1fr
+    grid-template-rows: 30rem
+    &-side
+        grid-area: side
+    &-map
+        grid-area: map
+
+.footer-grid
+    display: grid
+    grid-template-areas: ". . . ." ". section-a section-b ."
+    grid-template-columns: 1fr 3fr 6fr 1fr
+    grid-template-rows: 6rem 20rem
+    &-section-a
+        grid-area: section-a
+    &-section-b
+        grid-area: section-b

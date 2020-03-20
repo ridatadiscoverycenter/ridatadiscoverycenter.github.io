@@ -91,10 +91,12 @@ export default new Vuex.Store({
       },
       erddap: {
         name: 'ERDDAP Server',
+        description: '',
         url: ''
       },
       omero: {
         name: 'OMERO Server',
+        description: '',
         url: ''
       },
       buoy: {

@@ -39,17 +39,26 @@
         </div>
       </main>
     </section>
+    <section class="map-grid">
+      <aside class="map-grid-side"></aside>
+      <Map class="map-grid-map" />
+    </section>
+    <section class="footer-grid">
+      <BaseFooter class="footer-grid-section-b" />
+    </section>
   </main>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 import Waves from '@/components/Waves'
+import Map from '@/components/Map'
 
 export default {
   computed: mapState(['application', 'resources']),
   components: {
-    Waves
+    Waves,
+    Map
   }
 }
 </script>
