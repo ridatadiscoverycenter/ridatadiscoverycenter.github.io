@@ -1,0 +1,62 @@
+.application-grid
+    display: grid
+    grid-template-areas: "header" "section-a" "section-b" "footer"
+    grid-template-rows: 4rem 30rem 30rem 20rem
+    &-header
+        grid-area: header
+    &-section-a
+        grid-area: section-a
+    &-section-b
+        grid-area: section-b
+    &-footer
+        grid-area: footer
+
+// HOME PAGE
+.home-grid
+    display: grid
+    grid-template-areas: ". . center . ."
+    grid-template-columns: 1fr 3fr 7fr 3fr 1fr
+    grid-template-rows: 30rem
+    align-content: center
+    justify-content: center
+    margin-top: -10%
+    padding-top: 10%
+    background-image: linear-gradient(#598DAF, #FDBC89, #F8EADE)
+    &-center
+        display: grid
+        align-content: center
+        grid-area: center
+
+.home-title-box
+    border: 4px solid #598DAF
+    padding: 5rem
+    text-align: center
+    .action-button
+        margin-top: 4rem
+        z-index: 1000
+        @extend .button
+        @extend .is-rounded
+        @extend .is-warning
+        @extend .has-text-dark
+        @extend .is-large
+
+.home-bottom
+    display: grid
+    grid-template-areas: ". . ." ". center ."
+    grid-template-columns: 1fr 11fr 1fr
+    grid-template-rows: 10rem 30rem
+    aling-content: center
+    &-center
+        grid-area: center
+        z-index: 1000
+
+.home-three-columns
+    display: grid
+    grid-template-areas: "first . second . third"
+    grid-template-columns: 4fr 1fr 4fr 1fr 4fr
+    &-first
+        grid-area: first
+    &-second
+        grid-area: second
+    &-third
+        grid-area: third
