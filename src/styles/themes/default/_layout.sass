@@ -51,8 +51,8 @@
 
 .map-grid
     display: grid
-    grid-template-areas: ". side map ."
-    grid-template-columns: 1fr 3fr 6fr 1fr
+    grid-template-areas: ". side . map ."
+    grid-template-columns: 1fr 3fr 1fr 6fr 1fr
     grid-template-rows: 30rem
     &-side
         grid-area: side
@@ -61,8 +61,8 @@
 
 .footer-grid
     display: grid
-    grid-template-areas: ". . . ." ". section-a section-b ."
-    grid-template-columns: 1fr 3fr 6fr 1fr
+    grid-template-areas: ". . . . ." ". section-a . section-b ."
+    grid-template-columns: 1fr 3fr 1fr 6fr 1fr
     grid-template-rows: 6rem 20rem
     &-section-a
         grid-area: section-a

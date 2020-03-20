@@ -39,8 +39,13 @@
         </div>
       </main>
     </section>
-    <section class="map-grid">
-      <aside class="map-grid-side"></aside>
+    <section class="map-grid content">
+      <aside class="map-grid-side">
+        <h1 class="has-text-success">{{ resources.buoy_locations.name }}</h1>
+        <h3 class="has-text-dark">
+          {{ resources.buoy_locations.description }}
+        </h3>
+      </aside>
       <Map class="map-grid-map" />
     </section>
     <section class="footer-grid">

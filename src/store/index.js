@@ -83,6 +83,12 @@ export default new Vuex.Store({
         water: 'Water Quality Data',
         image: 'Image Data'
       },
+      buoy_locations: {
+        name: 'Buoy Locations',
+        description:
+          'Map and table listing of buoy owners/operators and buoy locations',
+        url: ''
+      },
       buoy_data_viewer: {
         name: 'Buoy Data Viewer',
         description:
