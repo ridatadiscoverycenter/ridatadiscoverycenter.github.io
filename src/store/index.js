@@ -86,8 +86,10 @@ export default new Vuex.Store({
       buoy_locations: {
         name: 'Buoy Locations',
         description:
-          'Map and table listing of buoy owners/operators and buoy locations',
-        url: ''
+          'Here you can find the location and ohter information about the buoys and stations where data are collected.',
+        text:
+          'Buoys were equipped with two sondes that measured temperature, salinity, dissolved oxygen and depth at approximately 1 meter from the bottom and 0.5 meters below the surface. In addition, chlorophyll fluorescence was measured by the near surface sonde. Measurements were collected at fifteen minute intervals and transmitted to shore via cellular modems every eight hours or via radio signal every fifteen minutes.',
+        source: 'http://www.narrbay.org/d_projects/buoy/buoydata.htm'
       },
       buoy_data_viewer: {
         name: 'Buoy Data Viewer',

@@ -12,7 +12,8 @@ import {
   faFlask,
   faMapMarkerAlt,
   faWater,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faCircle
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -22,6 +23,7 @@ library.add(faFlask)
 library.add(faMapMarkerAlt)
 library.add(faWater)
 library.add(faExternalLinkAlt)
+library.add(faCircle)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

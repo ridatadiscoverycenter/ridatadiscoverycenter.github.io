@@ -1,6 +1,7 @@
 <template>
   <div>
     <MglMap
+      class="table-wrapper"
       :accessToken="accessToken"
       :mapStyle.sync="mapStyle"
       :center.sync="mapCenter"
@@ -9,7 +10,46 @@
     >
       <div v-for="(point, index) in resources.buoy.data" v-bind:key="index">
         <MglMarker :coordinates="[point.longitude, point.latitude]">
-          <BuoyIcon slot="marker" class="icon" />
+          <font-awesome-icon slot="marker" icon="circle" :color="markerColor" />
+          <MglPopup>
+            <VCard>
+              <div class="">
+                <div class="">
+                  <div class="media">
+                    <BuoyIcon class="buoy-icon" />
+                    <div class="media-content">
+                      <p class="title is-4">{{ point.name }}</p>
+                      <p class="subtitle">
+                        <span class="buoy-labels"
+                          >label: {{ point.label }}</span
+                        >
+                        <span class="buoy-labels"
+                          >BART: {{ point.BART_label }}</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="content buoy-info">
+                    <p class="buoy-descriptor">
+                      <strong>type: </strong>{{ point.station_type }}
+                    </p>
+                    <p class="buoy-descriptor">
+                      <strong>owner: </strong>{{ point.owner }}
+                    </p>
+                    <p class="buoy-descriptor">
+                      <strong>operator: </strong>{{ point.operator }}
+                    </p>
+                    <p class="buoy-descriptor">
+                      <strong>season: </strong>{{ point.season }}
+                    </p>
+                    <br />
+                    <time>{{ point.dates_stabilisehd }}</time>
+                  </div>
+                </div>
+              </div>
+            </VCard>
+          </MglPopup>
         </MglMarker>
       </div>
     </MglMap>
@@ -17,15 +57,15 @@
 </template>
 
 <script>
-import BuoyIcon from '@/assets/illustrations/buoy-marker.svg'
 import { mapState } from 'vuex'
 import Mapbox from 'mapbox-gl'
-import { MglMap, MglMarker } from 'vue-mapbox'
-
+import { MglMap, MglMarker, MglPopup } from 'vue-mapbox'
+import BuoyIcon from '@/assets/illustrations/buoy-marker.svg'
 export default {
   components: {
     MglMap,
     MglMarker,
+    MglPopup,
     BuoyIcon
   },
   created() {
@@ -44,7 +84,10 @@ export default {
     return {
       mapCenter: [-71.374022, 41.577553],
       accessToken: process.env.VUE_APP_MAPBOX_ACCESS_TOKEN, // access token. Needed if you using Mapbox maps
-      darkScheme: !window.matchMedia('(prefers-color-scheme: dark)')
+      darkScheme: !window.matchMedia('(prefers-color-scheme: dark)'),
+      markerColor: window.matchMedia('(prefers-color-scheme: dark)')
+        ? '#025E73'
+        : '#FEBE80'
     }
   },
   computed: {
@@ -59,8 +102,10 @@ export default {
     onMediaChange(e) {
       if (e.matches) {
         this.darkScheme = true
+        this.markerColor = '#FEBE80'
       } else {
         this.darkScheme = false
+        this.markerColor = '#025E73'
       }
     }
   }

@@ -42,11 +42,26 @@
     <section class="map-grid content">
       <aside class="map-grid-side">
         <h1 class="has-text-success">{{ resources.buoy_locations.name }}</h1>
-        <h3 class="has-text-dark">
+        <h4 class="has-text-dark">
           {{ resources.buoy_locations.description }}
-        </h3>
+        </h4>
+        <p>
+          {{ resources.buoy_locations.text }}
+          <span
+            ><a
+              :href="resources.buoy_locations.source"
+              class="small has-text-primary"
+              >Source</a
+            ></span
+          >
+        </p>
+        <button class="button is-primary" @click="toggleView">
+          <span v-if="!showTable">Switch to Table View</span>
+          <span v-else>Switch to Map View</span>
+        </button>
       </aside>
-      <Map class="map-grid-map" />
+      <BuoyTable v-if="showTable" class="map-grid-main" />
+      <Map v-else class="map-grid-main" />
     </section>
     <section class="footer-grid">
       <BaseFooter class="footer-grid-section-b" />
@@ -58,12 +73,24 @@
 import { mapState } from 'vuex'
 import Waves from '@/components/Waves'
 import Map from '@/components/Map'
+import BuoyTable from '@/components/BuoyTable'
 
 export default {
   computed: mapState(['application', 'resources']),
+  data: function() {
+    return {
+      showTable: false
+    }
+  },
   components: {
     Waves,
-    Map
+    Map,
+    BuoyTable
+  },
+  methods: {
+    toggleView() {
+      this.showTable = !this.showTable
+    }
   }
 }
 </script>
