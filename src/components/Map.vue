@@ -84,10 +84,12 @@ export default {
     return {
       mapCenter: [-71.374022, 41.577553],
       accessToken: process.env.VUE_APP_MAPBOX_ACCESS_TOKEN, // access token. Needed if you using Mapbox maps
-      darkScheme: !window.matchMedia('(prefers-color-scheme: dark)'),
+      darkScheme: window.matchMedia('(prefers-color-scheme: dark)')
+        ? true
+        : false,
       markerColor: window.matchMedia('(prefers-color-scheme: dark)')
-        ? '#025E73'
-        : '#FEBE80'
+        ? '#FEBE80'
+        : '#025E73'
     }
   },
   computed: {
