@@ -17,14 +17,14 @@ jobs:
         VUE_APP_MAP_STYLE_LIGHT: ${{ secrets.VUE_APP_MAP_STYLE_LIGHT }}
         VUE_APP_MAP_STYLE_DARK: ${{ secrets.VUE_APP_MAP_STYLE_DARK }}
       run: npm install
-    - name: Build
+    - name: Build 🔧
       env:
         NODE_ENV: production
       run: npm run build
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: master # The branch the action should deploy to.
-          FOLDER: dist # The folder the action should deploy.
-          TARGET_FOLDER: dist
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: master # The branch the action should deploy to.
+        FOLDER: dist # The folder the action should deploy.
+        TARGET_FOLDER: dist
