@@ -14,11 +14,6 @@ export default {
 
 <style lang="sass">
 .waves
-    position: absolute
-    width: 150vw
-    margin-left: -25%
-    margin-top: -20%
-    z-index: 1
     .st0
       fill:#4E8099
     .st1

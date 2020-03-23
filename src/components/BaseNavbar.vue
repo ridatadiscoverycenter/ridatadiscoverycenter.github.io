@@ -7,7 +7,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="https://bulma.io">
         <BaseLogo />
-        <span>{{ application.title }}</span>
+        <span class="navbar-title">{{ application.title }}</span>
       </a>
 
       <a
@@ -27,8 +27,6 @@
       <div class="navbar-end">
         <router-link class="navbar-item" to="/">Home</router-link>
         <router-link class="navbar-item" to="/about">About</router-link>
-        <router-link class="navbar-item" to="/resources">Resources</router-link>
-        <router-link class="navbar-item" to="/map">Map</router-link>
       </div>
     </div>
   </nav>

@@ -4,40 +4,44 @@
       <main class="home-grid-center">
         <div class="home-title-box">
           <h1 class="home-title">{{ application.subtitle }}</h1>
-          <button class="action-button">
+          <a href="#start-exploring" class="action-button">
             {{ $t('actions.start_exploring') }}
-          </button>
+          </a>
         </div>
       </main>
       <Waves />
     </section>
-    <section class="home-bottom content">
-      <main class="home-bottom-center home-three-columns">
-        <div class="home-three-columns-first">
-          <BaseCard
-            :main="resources.buoy_data_viewer.name"
-            :icon="['fas', 'water']"
-            :category="resources.data.narr_bay"
-            :description="resources.buoy_data_viewer.description"
-          />
-        </div>
-        <div class="home-three-columns-second">
-          <BaseCard
-            :main="resources.erddap.name"
-            :icon="['fas', 'flask']"
-            :category="resources.data.water"
-            :description="resources.erddap.description"
-          />
-        </div>
-        <div class="home-three-columns-third">
-          <BaseCard
-            :main="resources.omero.name"
-            :icon="['fas', 'camera-retro']"
-            :category="resources.data.image"
-            :description="resources.omero.description"
-          />
-        </div>
-      </main>
+    <section
+      id="start-exploring"
+      class="home-bottom content home-three-columns"
+    >
+      <div class="home-three-columns-first">
+        <BaseCard
+          :main="resources.buoy_data_viewer.name"
+          :icon="['fas', 'water']"
+          :category="resources.data.narr_bay"
+          :description="resources.buoy_data_viewer.description"
+          :url="resources.buoy_data_viewer.url"
+        />
+      </div>
+      <div class="home-three-columns-second">
+        <BaseCard
+          :main="resources.erddap.name"
+          :icon="['fas', 'water']"
+          :category="resources.data.oceonographic"
+          :description="resources.erddap.description"
+          :url="resources.erddap.url"
+        />
+      </div>
+      <div class="home-three-columns-third">
+        <BaseCard
+          :main="resources.omero.name"
+          :icon="['fas', 'camera-retro']"
+          :category="resources.data.image"
+          :description="resources.omero.description"
+          :url="resources.omero.url"
+        />
+      </div>
     </section>
     <section class="map-grid content">
       <aside class="map-grid-side">
@@ -63,9 +67,7 @@
       <BuoyTable v-if="showTable" class="map-grid-main" />
       <Map v-else class="map-grid-main" />
     </section>
-    <section class="footer-grid">
-      <BaseFooter class="footer-grid-section-b" />
-    </section>
+    <BaseFooter />
   </main>
 </template>
 

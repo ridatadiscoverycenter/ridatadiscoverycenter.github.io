@@ -30,7 +30,7 @@ export default new Vuex.Store({
     about: {
       text:
         'The National Science Foundation in 2017 awarded the University of Rhode Island with a grant to establish a statewide research consortium — the RI Consortium for Coastal Ecology Assessment, Innovation, and Modeling (RI C-AIM) — to study the effects of climate variability on coastal ecosystems. The RI Data Discovery Center is one of the efforts of RI C-AIM consortium. The goal of the RI Data Discovery Center is to become the national and international go-to-source for data on the Narragansett Bay ecosystem. For C-AIM investigators pursuing the research goals of the Integrated Bay Observatory, Predicting Ecosystem Response and Visualization & Imaging, RI Data Discovery Center will become the site where they will store their data, share their data internally with other C-AIM investigators and share their data externally with investigators around the world. In addition to new data collected by C-AIM investigators, RI Data Discovery Center will also collect and share historical data on the Narragansett Bay ecosystem. In addition to sharing data with scientists, RIDDC will also become the go-to-source where decision makers, land-use managers, relevant industries, citizen scientists and students can find data on the Narragansett Bay ecosystem.',
-      'contact-email': 'ridatadiscoverycenter@brown.edu',
+      contact_email: 'ridatadiscoverycenter@brown.edu',
       leads: {
         text: 'leads',
         leads: [
@@ -81,12 +81,13 @@ export default new Vuex.Store({
       data: {
         narr_bay: 'Narragansett Bay Buoy',
         water: 'Water Quality Data',
-        image: 'Image Data'
+        image: 'Image Data',
+        oceonographic: 'Oceanographic Data'
       },
       buoy_locations: {
         name: 'Buoy Locations',
         description:
-          'Here you can find the location and ohter information about the buoys and stations where data are collected.',
+          'Here you can find the location and ohter information about the buoys and stations where we collect data.',
         text:
           'Buoys were equipped with two sondes that measured temperature, salinity, dissolved oxygen and depth at approximately 1 meter from the bottom and 0.5 meters below the surface. In addition, chlorophyll fluorescence was measured by the near surface sonde. Measurements were collected at fifteen minute intervals and transmitted to shore via cellular modems every eight hours or via radio signal every fifteen minutes.',
         source: 'http://www.narrbay.org/d_projects/buoy/buoydata.htm'
@@ -95,17 +96,19 @@ export default new Vuex.Store({
         name: 'Buoy Data Viewer',
         description:
           'Explore historical and real-time data about water quality, temerature, and more from the Narragansett Bay.',
-        url: ''
+        url: 'http://pbuoycit.services.brown.edu/buoyportal'
       },
       erddap: {
         name: 'ERDDAP Server',
-        description: '',
-        url: ''
+        description:
+          'ERDDAP is a data server that gives you a simple, consistent way to download subsets of gridded and tabular scientific datasets in common file formats and make graphs and maps.',
+        url: 'https://pricaimcit.services.brown.edu/erddap/index.html'
       },
       omero: {
-        name: 'OMERO Server',
-        description: '',
-        url: ''
+        name: 'OMERO.web Server',
+        description:
+          'OMERO handles all your images in a secure central repository. You can view, organize and analyze your image data.',
+        url: 'https://pricaimcit.services.brown.edu/omero'
       },
       buoy: {
         locations: 'Buoy Locations',

@@ -1,0 +1,87 @@
+.footer-grid
+    display: grid
+    grid-template-areas: ". section-a ." " . section-b ." ". bottom  ."
+    grid-template-columns: 1fr 6fr 1fr
+    grid-template-rows: repeat(3, auto)
+    &-section-a
+        grid-area: section-a
+    &-section-b
+        grid-area: section-b
+    &-bottom
+        grid-area: bottom
+        text-align: center
+    +desktop
+        grid-template-areas: ". . . . ." ". section-a . section-b ." ". bottom bottom bottom ."
+        grid-template-columns: 1fr 6fr 1fr 6fr 1fr
+        grid-template-rows: 6rem 12rem 2rem
+
+.copyright-span
+    +desktop
+        margin-left: 1rem
+.footer
+    background-color: $beige
+    padding: 1rem 1.5rem 3rem
+.footer-logos
+    width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-evenly
+.footer-left
+    display: flex
+    flex-direction: column
+    align-items: center
+    &-email
+        padding-top: 1rem
+        padding-bottom: 1rem
+        +desktop
+            padding-top: 3rem
+.envelope-icon
+    margin-right: 1rem
+.footer-right
+    display: flex
+    flex-direction: column
+    +desktop
+        flex-direction: row
+    align-items: center
+    justify-content: center
+    font-size: 0.8rem
+.nsf
+    +desktop
+        flex-basis: 85%
+        margin-left: 2rem
+
+.sponsor-logo
+    width: 6rem
+    +desktop
+        width: 9rem
+
+.brown
+    .a
+        fill: #231f20
+    .b
+        fill: #fff
+    .c
+        fill: #ed1c24
+
+.ricaim
+    .st0
+        fill: #0B0B0B
+    .st1
+        fill: #059DC2
+    .st2
+        fill: #FDFDFD
+
+.uri
+    .a
+        fill: #002d62
+
+.nsf
+    .st0
+        fill: #D3B34E
+    .st1
+        fill: #02579A
+    .st2
+        fill: #9AAFD4
+    .st3
+        fill: #FCFDFE

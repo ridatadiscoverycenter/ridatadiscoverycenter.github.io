@@ -9,7 +9,7 @@
       <p class="title">
         {{ main }}
       </p>
-      <p>{{ description }}</p>
+      <p class="card-content-description">{{ description }}</p>
     </div>
     <footer class="card-footer">
       <p class="card-footer-item">

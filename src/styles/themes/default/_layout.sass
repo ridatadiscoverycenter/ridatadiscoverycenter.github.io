@@ -2,69 +2,72 @@
 // HOME PAGE
 .home-grid
     display: grid
-    grid-template-areas: ". . center . ."
-    grid-template-columns: 1fr 3fr 7fr 3fr 1fr
-    grid-template-rows: 30rem
+    grid-template-areas: ". center ."
+    grid-template-columns: 1fr 7fr 1fr
+    grid-template-rows: 25rem
     align-content: center
     justify-content: center
-    margin-top: -10%
-    padding-top: 10%
-    background-image: linear-gradient(#598DAF, #FDBC89, #F8EADE)
+    margin-top: -18%
+    padding-top: 18%
+    background-image: linear-gradient($gradient1, $gradient2, $gradient3)
+    +desktop
+        margin-top: -10%
+        padding-top: 10%
+        grid-template-areas: ". . center . ."
+        grid-template-columns: 1fr 3fr 7fr 3fr 1fr
     &-center
         display: grid
         align-content: center
         grid-area: center
 
 .home-title-box
-    border: 4px solid #598DAF
     padding: 5rem
     text-align: center
+    +desktop
+        border: 4px solid $primary
     .action-button
-        margin-top: 4rem
+        margin-top: 1rem
         z-index: 1000
         @extend .button
         @extend .is-rounded
         @extend .is-warning
         @extend .has-text-dark
         @extend .is-large
-
+        +desktop
+            margin-top: 4rem
 .home-bottom
-    display: grid
-    grid-template-areas: ". . ." ". center ."
-    grid-template-columns: 1fr 11fr 1fr
-    grid-template-rows: 15rem 25rem
-    aling-content: center
-    &-center
-        grid-area: center
-        z-index: 1000
+    margin-top: 5rem
+    position: relative
+    z-index: 1000
+    +desktop
+        margin-top: 20rem
 
 .home-three-columns
     display: grid
-    grid-template-areas: "first . second . third"
-    grid-template-columns: 4fr 1fr 4fr 1fr 4fr
+    grid-template-areas: ". first ." ". . ." ". second ." ". . ." ". third ." 
+    grid-template-columns: 1fr 6fr 1fr
+    grid-template-rows: auto 1rem auto 1rem auto
     &-first
         grid-area: first
     &-second
         grid-area: second
     &-third
         grid-area: third
+    +desktop
+        grid-template-areas: ". first . second . third ."
+        grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr 1fr
+
 
 .map-grid
     display: grid
-    grid-template-areas: ". side . main ."
-    grid-template-columns: 1fr 3fr 1fr 6fr 1fr
-    grid-template-rows: 30rem
+    grid-template-areas: ". side ." ". . ." "main main main"
+    grid-template-columns: 1fr 6fr 1fr
+    grid-template-rows: auto 1rem 30rem
     &-side
         grid-area: side
     &-main
         grid-area: main
-
-.footer-grid
-    display: grid
-    grid-template-areas: ". . . . ." ". section-a . section-b ."
-    grid-template-columns: 1fr 3fr 1fr 6fr 1fr
-    grid-template-rows: 6rem 20rem
-    &-section-a
-        grid-area: section-a
-    &-section-b
-        grid-area: section-b
+    +desktop
+        grid-template-areas: ". side . main ."
+        grid-template-columns: 1fr 3fr 1fr 6fr 1fr
+        grid-template-rows: 30rem
