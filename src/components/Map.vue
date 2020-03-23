@@ -96,7 +96,6 @@ export default {
   },
   methods: {
     onMediaChange(e) {
-      console.log(e.matches)
       if (e.matches) {
         this.darkScheme = true
         this.markerColor = '#FEBE80'
