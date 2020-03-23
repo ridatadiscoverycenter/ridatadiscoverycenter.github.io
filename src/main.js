@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import i18n from './i18n'
+import VueScrollTo from 'vue-scrollto'
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -52,6 +53,20 @@ requireComponent.keys().forEach(fileName => {
 })
 
 Vue.config.productionTip = false
+
+Vue.use(VueScrollTo, {
+  container: 'body',
+  duration: 500,
+  easing: 'ease',
+  offset: 0,
+  force: true,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true
+})
 
 new Vue({
   router,

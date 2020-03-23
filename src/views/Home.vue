@@ -4,7 +4,7 @@
       <main class="home-grid-center">
         <div class="home-title-box">
           <h1 class="home-title">{{ application.subtitle }}</h1>
-          <a href="#start-exploring" class="action-button">
+          <a href="#" v-scroll-to="'#start-exploring'" class="action-button">
             {{ $t('actions.start_exploring') }}
           </a>
         </div>
