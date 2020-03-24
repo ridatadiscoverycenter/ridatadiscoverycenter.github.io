@@ -9,7 +9,7 @@
           </a>
         </div>
       </main>
-      <Waves />
+      <BaseWaves />
     </section>
     <section
       id="start-exploring"
@@ -73,7 +73,6 @@
 
 <script>
 import { mapState } from 'vuex'
-import Waves from '@/components/Waves'
 import Map from '@/components/Map'
 import BuoyTable from '@/components/BuoyTable'
 
@@ -85,7 +84,6 @@ export default {
     }
   },
   components: {
-    Waves,
     Map,
     BuoyTable
   },

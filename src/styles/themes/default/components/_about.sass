@@ -1,0 +1,20 @@
+.about-grid
+  display: grid
+  grid-template-areas: 'top top top' '. . .' '. middle .' '. . .' '. bottom .'
+  grid-template-columns: 1fr 6fr 1fr
+  grid-template-rows: 34rem 2rem auto 2rem auto
+  &-top
+    grid-area: top
+    margin-top: -18%
+    padding-top: 18%
+    background-image: linear-gradient($gradient1, $gradient2, $gradient3)
+    +desktop
+        margin-top: -10%
+        padding-top: 10%
+    z-index: 1
+  &-middle
+    grid-area: middle
+    z-index: 1000
+  &-bottom
+    grid-area: bottom
+    margin-bottom: 2rem

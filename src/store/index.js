@@ -16,6 +16,7 @@ export default new Vuex.Store({
       title: 'Rhode Island Data Discovery Center',
       subtitle:
         'Explore our collection of present and historical data from the Narragansett Bay.',
+      baseURL: 'https://ridatadiscoverycenter.github.io/',
       menu: {
         home: 'Home',
         resources: 'Resources',
@@ -50,7 +51,7 @@ export default new Vuex.Store({
             name: 'Dr. Lewis Rothstein',
             title: '',
             institution:
-              'DGraduate School of Oceanography, University of Rhode Island'
+              'Graduate School of Oceanography, University of Rhode Island'
           },
           {
             name: 'Dr. Breea Govenar',
