@@ -16,6 +16,7 @@
         aria-label="menu"
         aria-expanded="false"
         data-target="navbarBasicExample"
+        @click="expand"
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -23,7 +24,11 @@
       </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div
+      id="navbarBasicExample"
+      class="navbar-menu"
+      v-bind:class="{ 'is-active': isActive }"
+    >
       <div class="navbar-end">
         <router-link class="navbar-item" to="/">Home</router-link>
         <router-link class="navbar-item" to="/about">About</router-link>
@@ -35,6 +40,32 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  computed: mapState(['application'])
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  computed: mapState(['application']),
+  methods: {
+    expand() {
+      this.isActive = !this.isActive
+    }
+  }
 }
 </script>
+
+<style lang="sass">
+.navbar-item
+    font-weight: bold
+    font-size: 1rem
+.navbar-menu
+    width: 10rem
+    right: 0
+    background-color: transparent
+    position: absolute
+    .navbar-item
+        text-transform: uppercase
+.navbar-title
+    margin-left: 1rem
+    font-size: 1.2rem
+</style>
