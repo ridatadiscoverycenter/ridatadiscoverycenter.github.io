@@ -11,37 +11,39 @@
       </main>
       <BaseWaves />
     </section>
-    <section
-      id="start-exploring"
-      class="home-bottom content home-three-columns"
-    >
-      <div class="home-three-columns-first">
-        <BaseCard
-          :main="resources.buoy_data_viewer.name"
-          :icon="['fas', 'water']"
-          :category="resources.data.narr_bay"
-          :description="resources.buoy_data_viewer.description"
-          :url="resources.buoy_data_viewer.url"
-        />
-      </div>
-      <div class="home-three-columns-second">
-        <BaseCard
-          :main="resources.erddap.name"
-          :icon="['fas', 'water']"
-          :category="resources.data.oceonographic"
-          :description="resources.erddap.description"
-          :url="resources.erddap.url"
-        />
-      </div>
-      <div class="home-three-columns-third">
-        <BaseCard
-          :main="resources.omero.name"
-          :icon="['fas', 'camera-retro']"
-          :category="resources.data.image"
-          :description="resources.omero.description"
-          :url="resources.omero.url"
-        />
-      </div>
+    <section id="start-exploring" class="home-bottom content">
+      <BaseCard
+        class="data-card"
+        :main="resources.buoy_data_viewer.name"
+        :icon="['fas', 'water']"
+        :category="resources.data.narr_bay"
+        :description="resources.buoy_data_viewer.description"
+        :url="resources.buoy_data_viewer.url"
+      />
+      <BaseCard
+        class="data-card"
+        :main="resources.erddap.name"
+        :icon="['fas', 'water']"
+        :category="resources.data.oceonographic"
+        :description="resources.erddap.description"
+        :url="resources.erddap.url"
+      />
+      <BaseCard
+        class="data-card"
+        :main="resources.omero.name"
+        :icon="['fas', 'camera-retro']"
+        :category="resources.data.image"
+        :description="resources.omero.description"
+        :url="resources.omero.url"
+      />
+      <BaseCard
+        class="data-card"
+        :main="resources.plankton.name"
+        :icon="['fas', 'calendar-week']"
+        :category="resources.data.time"
+        :description="resources.plankton.description"
+        :url="resources.plankton.url"
+      />
     </section>
     <section class="map-grid content">
       <aside class="map-grid-side">

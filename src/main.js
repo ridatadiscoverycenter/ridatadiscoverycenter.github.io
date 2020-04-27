@@ -16,7 +16,9 @@ import {
   faExternalLinkAlt,
   faCircle,
   faEnvelope,
-  faCopyright
+  faCopyright,
+  faFilePdf,
+  faCalendarWeek
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -29,6 +31,8 @@ library.add(faExternalLinkAlt)
 library.add(faCircle)
 library.add(faEnvelope)
 library.add(faCopyright)
+library.add(faFilePdf)
+library.add(faCalendarWeek)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

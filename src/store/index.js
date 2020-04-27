@@ -54,11 +54,6 @@ export default new Vuex.Store({
               'Graduate School of Oceanography, University of Rhode Island'
           },
           {
-            name: 'Dr. Breea Govenar',
-            title: '',
-            institution: 'Biology Department, Rhode Island College'
-          },
-          {
             name: 'Neal Overstrom',
             title: '',
             institution: 'Nature Laboratory, Rhode Island School of Design'
@@ -83,7 +78,8 @@ export default new Vuex.Store({
         narr_bay: 'Narragansett Bay Buoy',
         water: 'Water Quality Data',
         image: 'Image Data',
-        oceonographic: 'Oceanographic Data'
+        oceonographic: 'Oceanographic Data',
+        time: 'Time Series Data'
       },
       buoy_locations: {
         name: 'Buoy Locations',
@@ -110,6 +106,12 @@ export default new Vuex.Store({
         description:
           'OMERO handles all your images in a secure central repository. You can view, organize and analyze your image data.',
         url: 'https://pricaimcit.services.brown.edu/omero'
+      },
+      plankton: {
+        name: 'Narragansett Bay Long-Term Plankton Time Series',
+        description:
+          'Narragansett Bay Long-Term Plankton Time Series is one of the world’s longest-running plankton surveys. Beginning in 1957, weekly samples have been collected to assess the phytoplankton community and characterize the physical parameters of Narragansett Bay.',
+        url: 'https://web.uri.edu/gso/research/plankton/'
       },
       buoy: {
         locations: 'Buoy Locations',

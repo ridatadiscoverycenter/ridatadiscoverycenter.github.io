@@ -32,7 +32,22 @@
           </div>
         </div>
       </section>
+      <section class="download-container">
+        <main class="about-text">
+          <h2 class="has-text-primary">
+            Data Acceptance Guidelines
+          </h2>
+          <p>
+            Contact us if you want us to host your Narragansett Bay related
+            data! See our data acceptance guidelines
+            <a href="./files/riddc_data_guidelines.pdf" target="_blank">
+              here <font-awesome-icon icon="file-pdf" />.</a
+            >
+          </p>
+        </main>
+      </section>
     </div>
+
     <BaseFooter />
   </section>
 </template>
