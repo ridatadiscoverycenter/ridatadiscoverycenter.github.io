@@ -6,19 +6,25 @@
     margin-top: -18%
     padding-top: 18%
     // background-image: linear-gradient($gradient1, $gradient2, $gradient3)
-    +desktop
+    +tablet
         margin-top: -10%
         padding-top: 10%
     z-index: 1
   &-middle
     z-index: 1000
     margin-bottom: 2rem
-    padding-right: 4rem
-    padding-left: 4rem
+    padding-right: 0.5rem
+    padding-left: 0.5rem
+    +tablet
+      padding-right: 4rem
+      padding-left: 4rem
   &-bottom
     margin-bottom: 2rem
-    padding-right: 4rem
-    padding-left: 4rem
+    padding-right: 0.5rem
+    padding-left: 0.5rem
+    +tablet
+      padding-right: 4rem
+      padding-left: 4rem
 
 .card-content
   padding-top: 0
@@ -36,12 +42,15 @@
   font-size: 1.2rem
   line-height: 1.6rem
 .about-map
-  margin-top: -14%
+  margin-top: -22%
   z-index: -1
 .download-container
-    padding-right: 4rem
-    padding-left: 4rem
     padding-bottom: 2rem
+    padding-right: 0.5rem
+    padding-left: 0.5rem
+    +tablet
+      padding-right: 4rem
+      padding-left: 4rem
 +tablet
   .person-card
     flex-basis: 28%
