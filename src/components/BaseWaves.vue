@@ -1,5 +1,7 @@
 <template>
-  <Waves class="waves" />
+  <div class="waves">
+    <Waves class="waves-svg" />
+  </div>
 </template>
 
 <script>

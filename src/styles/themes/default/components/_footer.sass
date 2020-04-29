@@ -1,8 +1,6 @@
 .footer-grid
     display: grid
-    grid-template-areas: ". section-a ." " . section-b ." ". bottom  ."
-    grid-template-columns: 1fr 6fr 1fr
-    grid-template-rows: repeat(3, auto)
+    grid-template-areas: "section-a" "section-b" "bottom"
     &-section-a
         grid-area: section-a
     &-section-b
@@ -10,7 +8,7 @@
     &-bottom
         grid-area: bottom
         text-align: center
-    +desktop
+    +tablet
         grid-template-areas: ". . . . ." ". section-a . section-b ." ". bottom bottom bottom ."
         grid-template-columns: 1fr 6fr 1fr 6fr 1fr
         grid-template-rows: 6rem 13rem 2rem
@@ -51,7 +49,7 @@
 
 
 .sponsor-logo
-    width: 6rem
+    width: 4rem
     +desktop
         width: 8rem
 .nsf
