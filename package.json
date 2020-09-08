@@ -13,7 +13,8 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
     "prebuild": "broccoli build public/css",
     "prestart": "npm run prebuild",
-    "start": "npm run serve"
+    "start": "npm run serve",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
@@ -51,6 +52,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",
+    "firebase-tools": "^8.10.0",
     "geckodriver": "^1.19.1",
     "git-cz": "^4.3.1",
     "lint-staged": "^9.5.0",
