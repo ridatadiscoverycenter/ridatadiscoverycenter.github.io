@@ -20,8 +20,8 @@ jobs:
         VUE_APP_MAP_STYLE_DARK: ${{ secrets.VUE_APP_MAP_STYLE_DARK }}
         NODE_ENV: production
       run: yarn build
-      - name: Deploy to Firebase
-        env: 
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: |
-          yarn deploy 
+    - name: Deploy to Firebase
+      env: 
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      run: |
+        yarn deploy 
