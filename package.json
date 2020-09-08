@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run serve",
+    "preserve": "broccoli build public/css",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "commit": "git-cz",
-    "prebuild": "broccoli build public/css",
-    "prestart": "npm run prebuild",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
+    "commit": "git-cz",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
+    "prebuild": "broccoli build public/css",
+    "prestart": "npm run prebuild",
+    "start": "npm run serve"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
@@ -33,7 +34,7 @@
     "@vue/cli-plugin-e2e-nightwatch": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-plugin-router": "^4.2.0",
-    "@vue/cli-plugin-unit-mocha": "^4.2.0",
+    "@vue/cli-plugin-unit-jest": "^4.3.1",
     "@vue/cli-plugin-vuex": "^4.2.0",
     "@vue/cli-service": "^4.2.0",
     "@vue/eslint-config-prettier": "^6.0.0",

@@ -4,35 +4,7 @@ import router from './router'
 import store from './store'
 import i18n from './i18n'
 import VueScrollTo from 'vue-scrollto'
-
-// Font Awesome
-import { library } from '@fortawesome/fontawesome-svg-core'
-import {
-  faCameraRetro,
-  faMicroscope,
-  faFlask,
-  faMapMarkerAlt,
-  faWater,
-  faExternalLinkAlt,
-  faCircle,
-  faEnvelope,
-  faCopyright,
-  faFilePdf,
-  faCalendarWeek
-} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-library.add(faCameraRetro)
-library.add(faMicroscope)
-library.add(faFlask)
-library.add(faMapMarkerAlt)
-library.add(faWater)
-library.add(faExternalLinkAlt)
-library.add(faCircle)
-library.add(faEnvelope)
-library.add(faCopyright)
-library.add(faFilePdf)
-library.add(faCalendarWeek)
+import FontAwesomeIcon from '../fontawesome.config'
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

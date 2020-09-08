@@ -9,7 +9,14 @@
           </a>
         </div>
       </main>
-      <BaseWaves />
+      <figure>
+        <img
+          class="waves"
+          src="@/assets/illustrations/waves-small.png"
+          alt="Waves Art"
+          style="width:100%"
+        />
+      </figure>
     </section>
     <section id="start-exploring" class="home-bottom content">
       <BaseCard
