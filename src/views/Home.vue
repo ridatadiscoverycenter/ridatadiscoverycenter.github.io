@@ -51,6 +51,14 @@
         :description="resources.plankton.description"
         :url="resources.plankton.url"
       />
+      <BaseCard
+        class="data-card"
+        :main="resources.jupyterbook.name"
+        :icon="['fas', 'water']"
+        :category="resources.data.oceonographic"
+        :description="resources.jupyterbook.description"
+        :url="resources.jupyterbook.url"
+      />
     </section>
     <section class="map-grid content">
       <aside class="map-grid-side">

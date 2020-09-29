@@ -113,6 +113,12 @@ export default new Vuex.Store({
           'Narragansett Bay Long-Term Plankton Time Series is one of the world’s longest-running plankton surveys. Beginning in 1957, weekly samples have been collected to assess the phytoplankton community and characterize the physical parameters of Narragansett Bay.',
         url: 'https://web.uri.edu/gso/research/plankton/'
       },
+      jupyterbook: {
+        name: 'RIDDC Data Articles',
+        description:
+          'A collection of articles and jupyter notebooks with stories, exploratory data analyses, and code examples using our ERDDAP server data.',
+        url: 'https://riddc-jupyter-book.web.app'
+      },
       buoy: {
         locations: 'Buoy Locations',
         owners: 'Buoy Owners',
