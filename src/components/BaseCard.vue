@@ -9,6 +9,7 @@
       <p class="title">
         {{ main }}
       </p>
+      <span v-show="beta" class="tag is-warning has-text-black">beta</span>
       <p class="card-content-description">{{ description }}</p>
     </div>
     <footer class="card-footer">
@@ -31,7 +32,7 @@
       <p v-if="third" class="card-footer-item">
         <span>
           <a :href="thirdUrl"
-            >{{ $t('actions.go_to', 'third') }}
+            >{{ $t('actions.go_to', [third]) }}
             <font-awesome-icon icon="external-link-alt" />
           </a>
         </span>
@@ -63,6 +64,14 @@ export default {
       type: String,
       required: false
     },
+    secondUrl: {
+      type: String,
+      required: false
+    },
+    thirdUrl: {
+      type: String,
+      required: false
+    },
     category: {
       type: String,
       required: true
@@ -70,6 +79,10 @@ export default {
     description: {
       type: String,
       required: true
+    },
+    beta: {
+      type: Boolean,
+      default: false
     }
   }
 }

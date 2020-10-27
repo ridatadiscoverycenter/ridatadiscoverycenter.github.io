@@ -90,22 +90,21 @@ export default new Vuex.Store({
         source: 'http://www.narrbay.org/d_projects/buoy/buoydata.htm'
       },
       buoy_data_viewer: {
-        name: 'Buoy Data Viewer',
+        name: 'Narragansett Bay Data Explorer',
+        beta: true,
         description:
-          'Explore historical and real-time data about water quality, temerature, and more from the Narragansett Bay.',
-        url: 'http://pbuoycit.services.brown.edu/buoyportal'
+          'Explore historical and real-time data about water quality, temperature, and more from the Narragansett Bay. The new Narragansett Bay Data Explorer is in beta, if you find issues leave us a comment or open an issue on the GitHub repo linked below. You can still use the old Buoy Viewer.',
+        secondUrl: 'http://pbuoycit.services.brown.edu/buoyportal',
+        second: 'Buoy Viewer',
+        url: 'https://pricaimcit.services.brown.edu/narrbay_explorer/',
+        third: 'GitHub Repo',
+        thirdUrl: 'https://github.com/ridatadiscoverycenter/buoy-viewer-nuxt'
       },
       erddap: {
         name: 'ERDDAP Server',
         description:
           'ERDDAP is a data server that gives you a simple, consistent way to download subsets of gridded and tabular scientific datasets in common file formats and make graphs and maps.',
         url: 'https://pricaimcit.services.brown.edu/erddap/index.html'
-      },
-      omero: {
-        name: 'OMERO.web Server',
-        description:
-          'OMERO handles all your images in a secure central repository. You can view, organize and analyze your image data.',
-        url: 'https://pricaimcit.services.brown.edu/omero'
       },
       plankton: {
         name: 'Narragansett Bay Long-Term Plankton Time Series',

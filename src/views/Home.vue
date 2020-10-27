@@ -26,6 +26,11 @@
         :category="resources.data.narr_bay"
         :description="resources.buoy_data_viewer.description"
         :url="resources.buoy_data_viewer.url"
+        :second="resources.buoy_data_viewer.second"
+        :secondUrl="resources.buoy_data_viewer.secondUrl"
+        :third="resources.buoy_data_viewer.third"
+        :thirdUrl="resources.buoy_data_viewer.thirdUrl"
+        :beta="resources.buoy_data_viewer.beta"
       />
       <BaseCard
         class="data-card"
@@ -34,14 +39,6 @@
         :category="resources.data.oceonographic"
         :description="resources.erddap.description"
         :url="resources.erddap.url"
-      />
-      <BaseCard
-        class="data-card"
-        :main="resources.omero.name"
-        :icon="['fas', 'camera-retro']"
-        :category="resources.data.image"
-        :description="resources.omero.description"
-        :url="resources.omero.url"
       />
       <BaseCard
         class="data-card"
