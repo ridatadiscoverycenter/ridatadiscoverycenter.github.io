@@ -96,7 +96,7 @@ export default new Vuex.Store({
           'Explore historical and real-time data about water quality, temperature, and more from the Narragansett Bay. The new Narragansett Bay Data Explorer is in beta, if you find issues leave us a comment or open an issue on the GitHub repo linked below. You can still use the old Buoy Viewer.',
         secondUrl: 'http://pbuoycit.services.brown.edu/buoyportal',
         second: 'Buoy Viewer',
-        url: 'https://pricaimcit.services.brown.edu/narrbay_explorer/',
+        url: 'https://data-explorer.riddc.brown.edu',
         third: 'GitHub Repo',
         thirdUrl: 'https://github.com/ridatadiscoverycenter/buoy-viewer-nuxt'
       },
