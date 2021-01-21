@@ -42,15 +42,15 @@ import { mapState } from 'vuex'
 export default {
   data() {
     return {
-      isActive: false
+      isActive: false,
     }
   },
   computed: mapState(['application']),
   methods: {
     expand() {
       this.isActive = !this.isActive
-    }
-  }
+    },
+  },
 }
 </script>
 

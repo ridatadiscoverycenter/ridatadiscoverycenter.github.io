@@ -9,7 +9,7 @@ import Waves from '@/assets/illustrations/waves-small.svg'
 
 export default {
   components: {
-    Waves
-  }
+    Waves,
+  },
 }
 </script>

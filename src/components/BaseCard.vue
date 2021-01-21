@@ -46,44 +46,44 @@ export default {
   props: {
     main: {
       type: String,
-      required: true
+      required: true,
     },
     second: {
       type: String,
-      required: false
+      required: false,
     },
     third: {
       type: String,
-      required: false
+      required: false,
     },
     icon: {
       type: Array,
-      required: false
+      required: false,
     },
     url: {
       type: String,
-      required: false
+      required: false,
     },
     secondUrl: {
       type: String,
-      required: false
+      required: false,
     },
     thirdUrl: {
       type: String,
-      required: false
+      required: false,
     },
     category: {
       type: String,
-      required: true
+      required: true,
     },
     description: {
       type: String,
-      required: true
+      required: true,
     },
     beta: {
       type: Boolean,
-      default: false
-    }
-  }
+      default: false,
+    },
+  },
 }
 </script>

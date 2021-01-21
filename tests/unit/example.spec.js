@@ -15,9 +15,9 @@ describe('BaseCard.vue', () => {
     mocks: {
       $t: () => {
         return { actions: { go_to: 'Go To' } }
-      }
+      },
     },
-    propsData: { main, category, description, icon }
+    propsData: { main, category, description, icon },
   })
 
   it('should render card', () => {
