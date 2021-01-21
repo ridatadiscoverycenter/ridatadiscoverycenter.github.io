@@ -62,7 +62,7 @@ export default {
     MglMap,
     MglMarker,
     MglPopup,
-    BuoyIcon
+    BuoyIcon,
   },
   created() {
     // We need to set mapbox-gl library here in order to use it in template
@@ -71,8 +71,8 @@ export default {
   mounted() {
     // add event listener for prefers-color-scheme
     let mql = window.matchMedia('(prefers-color-scheme: dark)')
-    const onMediaChange = e => this.onMediaChange(e)
-    mql.addEventListener('change', function(e) {
+    const onMediaChange = (e) => this.onMediaChange(e)
+    mql.addEventListener('change', function (e) {
       onMediaChange(e)
     })
   },
@@ -80,19 +80,19 @@ export default {
     return {
       mapCenter: [-71.374022, 41.577553],
       accessToken: process.env.VUE_APP_MAPBOX_ACCESS_TOKEN, // access token. Needed if you using Mapbox maps
-      darkScheme: window.matchMedia('(prefers-color-scheme: dark)').matches
+      darkScheme: window.matchMedia('(prefers-color-scheme: dark)').matches,
     }
   },
   computed: {
     ...mapState(['resources']),
-    markerColor: function() {
+    markerColor: function () {
       return this.darkScheme ? '#FEBE80' : '#025E73'
     },
-    mapStyle: function() {
+    mapStyle: function () {
       return this.darkScheme
         ? process.env.VUE_APP_MAP_STYLE_DARK
         : process.env.VUE_APP_MAP_STYLE_LIGHT
-    }
+    },
   },
   methods: {
     onMediaChange(e) {
@@ -103,7 +103,7 @@ export default {
         this.darkScheme = false
         this.markerColor = '#025E73'
       }
-    }
-  }
+    },
+  },
 }
 </script>

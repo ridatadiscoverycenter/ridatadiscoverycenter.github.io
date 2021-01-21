@@ -13,7 +13,7 @@ import {
   faEnvelope,
   faCopyright,
   faFilePdf,
-  faCalendarWeek
+  faCalendarWeek,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faCameraRetro)

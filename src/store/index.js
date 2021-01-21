@@ -8,7 +8,7 @@ export default new Vuex.Store({
     names: {
       riddc: 'Rhode Island Data Discovery Center',
       ricaim:
-        'Rhode Island Consortium for Coastal Ecology Assessment, Innovation & Modeling'
+        'Rhode Island Consortium for Coastal Ecology Assessment, Innovation & Modeling',
     },
     funding:
       'This material is based upon work conducted by the Rhode Island Consortium for Coastal Ecology Assessment, Innovation & Modeling (RI C-AIM), and supported in full by the National Science Foundation EPSCoR Cooperative Agreement 1655221. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.',
@@ -20,12 +20,12 @@ export default new Vuex.Store({
       menu: {
         home: 'Home',
         resources: 'Resources',
-        about: 'About'
+        about: 'About',
       },
       titles: {
         highlights: 'Highlights',
-        collaborators: 'Collaborators'
-      }
+        collaborators: 'Collaborators',
+      },
     },
     map: {},
     about: {
@@ -39,39 +39,39 @@ export default new Vuex.Store({
             name: 'Dr. Geoffrey Bothun',
             title: 'RI NSF EPSCoR Principal Investigator',
             institution:
-              'Department of Chemical Engineering, University of Rhode Island'
+              'Department of Chemical Engineering, University of Rhode Island',
           },
           {
             name: 'Dr. Jeffrey Morgan',
             title: '',
             institution:
-              'Department of Molecular Pharmacology, Physiology & Biotechnology, Brown University'
+              'Department of Molecular Pharmacology, Physiology & Biotechnology, Brown University',
           },
           {
             name: 'Dr. Lewis Rothstein',
             title: '',
             institution:
-              'Graduate School of Oceanography, University of Rhode Island'
+              'Graduate School of Oceanography, University of Rhode Island',
           },
           {
             name: 'Neal Overstrom',
             title: '',
-            institution: 'Nature Laboratory, Rhode Island School of Design'
+            institution: 'Nature Laboratory, Rhode Island School of Design',
           },
           {
             name: 'Dr. Bethany Jenkins',
             title: '',
             institution:
-              'Department of Cell and Molecular Biology, University of Rhode Island'
+              'Department of Cell and Molecular Biology, University of Rhode Island',
           },
           {
             name: 'Dr. Baylor Fox-Kemper',
             title: '',
             institution:
-              'Department of Earth, Environmental, & Planetary Sciences, Brown University'
-          }
-        ]
-      }
+              'Department of Earth, Environmental, & Planetary Sciences, Brown University',
+          },
+        ],
+      },
     },
     resources: {
       data: {
@@ -79,7 +79,7 @@ export default new Vuex.Store({
         water: 'Water Quality Data',
         image: 'Image Data',
         oceonographic: 'Oceanographic Data',
-        time: 'Time Series Data'
+        time: 'Time Series Data',
       },
       buoy_locations: {
         name: 'Buoy Locations',
@@ -87,7 +87,7 @@ export default new Vuex.Store({
           'Here you can find the location and ohter information about the buoys and stations where we collect data.',
         text:
           'Buoys were equipped with two sondes that measured temperature, salinity, dissolved oxygen and depth at approximately 1 meter from the bottom and 0.5 meters below the surface. In addition, chlorophyll fluorescence was measured by the near surface sonde. Measurements were collected at fifteen minute intervals and transmitted to shore via cellular modems every eight hours or via radio signal every fifteen minutes.',
-        source: 'http://www.narrbay.org/d_projects/buoy/buoydata.htm'
+        source: 'http://www.narrbay.org/d_projects/buoy/buoydata.htm',
       },
       buoy_data_viewer: {
         name: 'Narragansett Bay Data Explorer',
@@ -96,27 +96,27 @@ export default new Vuex.Store({
           'Explore historical and real-time data about water quality, temperature, and more from the Narragansett Bay. The new Narragansett Bay Data Explorer is in beta, if you find issues leave us a comment or open an issue on the GitHub repo linked below. You can still use the old Buoy Viewer.',
         secondUrl: 'http://pbuoycit.services.brown.edu/buoyportal',
         second: 'Buoy Viewer',
-        url: 'https://pricaimcit.services.brown.edu/narrbay_explorer/',
+        url: 'https://data-explorer.riddc.brown.edu/',
         third: 'GitHub Repo',
-        thirdUrl: 'https://github.com/ridatadiscoverycenter/buoy-viewer-nuxt'
+        thirdUrl: 'https://github.com/ridatadiscoverycenter/buoy-viewer-nuxt',
       },
       erddap: {
         name: 'ERDDAP Server',
         description:
           'ERDDAP is a data server that gives you a simple, consistent way to download subsets of gridded and tabular scientific datasets in common file formats and make graphs and maps.',
-        url: 'https://pricaimcit.services.brown.edu/erddap/index.html'
+        url: 'https://pricaimcit.services.brown.edu/erddap/index.html',
       },
       plankton: {
         name: 'Narragansett Bay Long-Term Plankton Time Series',
         description:
           'Narragansett Bay Long-Term Plankton Time Series is one of the world’s longest-running plankton surveys. Beginning in 1957, weekly samples have been collected to assess the phytoplankton community and characterize the physical parameters of Narragansett Bay.',
-        url: 'https://web.uri.edu/gso/research/plankton/'
+        url: 'https://web.uri.edu/gso/research/plankton/',
       },
       jupyterbook: {
         name: 'RIDDC Data Articles',
         description:
           'A collection of articles and jupyter notebooks with stories, exploratory data analyses, and code examples using our ERDDAP server data.',
-        url: 'https://riddc-jupyter-book.web.app'
+        url: 'https://riddc-jupyter-book.web.app',
       },
       buoy: {
         locations: 'Buoy Locations',
@@ -133,7 +133,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2001-2002',
             season: 'extended season',
             latitude: 41.5911,
-            longitude: -71.3426
+            longitude: -71.3426,
           },
           {
             label: 'NP',
@@ -146,7 +146,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '1999, 2001-present',
             season: 'Summer seasonal (may-oct)',
             latitude: 41.6708,
-            longitude: -71.3549
+            longitude: -71.3549,
           },
           {
             label: 'CP',
@@ -159,7 +159,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2003, 2005-present',
             season: 'Summer seasonal (may-oct)',
             latitude: 41.7128,
-            longitude: -71.3437
+            longitude: -71.3437,
           },
           {
             label: 'UB',
@@ -172,7 +172,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2008-present (winter only)',
             season: 'winter season only',
             latitude: 41.7115,
-            longitude: -71.3379
+            longitude: -71.3379,
           },
           {
             label: 'BR',
@@ -185,7 +185,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2001-present',
             season: 'Summer seasonal (may-oct)',
             latitude: 41.731,
-            longitude: -71.3653
+            longitude: -71.3653,
           },
           {
             label: 'MV',
@@ -198,7 +198,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2004-present',
             season: 'Summer seasonal (may-oct)',
             latitude: 41.6385,
-            longitude: -71.3909
+            longitude: -71.3909,
           },
           {
             label: 'QP',
@@ -211,7 +211,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2005-present',
             season: 'Summer seasonal (may-oct)',
             latitude: 41.5903,
-            longitude: -71.38
+            longitude: -71.38,
           },
           {
             label: 'MH',
@@ -224,7 +224,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2005-present',
             season: 'Summer seasonal (may-oct)',
             latitude: 41.6799,
-            longitude: -71.2156
+            longitude: -71.2156,
           },
           {
             label: 'PP',
@@ -237,7 +237,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2004-present',
             season: 'Summer seasonal (may-oct)',
             latitude: 41.6492,
-            longitude: -71.3181
+            longitude: -71.3181,
           },
           {
             label: 'SR',
@@ -250,7 +250,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2008-present',
             season: 'Summer seasonal (may-oct)',
             latitude: 41.676,
-            longitude: -71.4243
+            longitude: -71.4243,
           },
           {
             label: 'TW',
@@ -263,7 +263,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2004-present',
             season: 'year round',
             latitude: 41.5789,
-            longitude: -71.3215
+            longitude: -71.3215,
           },
           {
             label: 'PD',
@@ -276,7 +276,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2004-present',
             season: 'extended season',
             latitude: 41.8418,
-            longitude: -71.372
+            longitude: -71.372,
           },
           {
             label: 'GB',
@@ -289,7 +289,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2009-present',
             season: 'seasonal',
             latitude: 41.6861,
-            longitude: -71.4459
+            longitude: -71.4459,
           },
           {
             label: 'PC',
@@ -302,7 +302,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '1995-present',
             season: 'extended season',
             latitude: 41.6406,
-            longitude: -71.3411
+            longitude: -71.3411,
           },
           {
             label: 'GD',
@@ -315,7 +315,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '1995-present',
             season: 'year round',
             latitude: 41.4922,
-            longitude: -71.4189
+            longitude: -71.4189,
           },
           {
             label: 'CR',
@@ -328,7 +328,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2016-present',
             season: 'seasonal',
             latitude: 41.7015,
-            longitude: -71.2154
+            longitude: -71.2154,
           },
           {
             label: 'TR',
@@ -341,7 +341,7 @@ export default new Vuex.Store({
             dates_stabilisehd: '2016-present',
             season: 'seasonal',
             latitude: 41.7009,
-            longitude: -71.1877
+            longitude: -71.1877,
           },
           {
             label: 'GB-old',
@@ -354,13 +354,13 @@ export default new Vuex.Store({
             dates_stabilisehd: '2004-2006 (seasonal) 2007-2008 year round',
             season: 'seasonal, year round',
             latitude: 41.6848,
-            longitude: -71.446
-          }
-        ]
-      }
-    }
+            longitude: -71.446,
+          },
+        ],
+      },
+    },
   },
   mutations: {},
   actions: {},
-  modules: {}
+  modules: {},
 })

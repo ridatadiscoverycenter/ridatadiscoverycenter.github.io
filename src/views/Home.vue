@@ -14,7 +14,7 @@
           class="waves"
           src="@/assets/illustrations/waves-small.png"
           alt="Waves Art"
-          style="width:100%"
+          style="width: 100%"
         />
       </figure>
     </section>
@@ -92,19 +92,19 @@ import BuoyTable from '@/components/BuoyTable'
 
 export default {
   computed: mapState(['application', 'resources']),
-  data: function() {
+  data: function () {
     return {
-      showTable: false
+      showTable: false,
     }
   },
   components: {
     Map,
-    BuoyTable
+    BuoyTable,
   },
   methods: {
     toggleView() {
       this.showTable = !this.showTable
-    }
-  }
+    },
+  },
 }
 </script>

@@ -34,9 +34,7 @@
       </section>
       <section class="download-container">
         <main class="about-text">
-          <h2 class="has-text-primary">
-            Data Acceptance Guidelines
-          </h2>
+          <h2 class="has-text-primary">Data Acceptance Guidelines</h2>
           <p>
             Contact us if you want us to host your Narragansett Bay related
             data! See our data acceptance guidelines
@@ -57,8 +55,8 @@ import { mapState } from 'vuex'
 import NarrSvg from '@/assets/illustrations/narrbay.svg'
 export default {
   components: {
-    NarrSvg
+    NarrSvg,
   },
-  computed: mapState(['application', 'about'])
+  computed: mapState(['application', 'about']),
 }
 </script>

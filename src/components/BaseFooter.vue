@@ -39,15 +39,15 @@ import Brown from '@/assets/illustrations/brown-logo.svg'
 export default {
   data() {
     return {
-      year: new Date().getFullYear()
+      year: new Date().getFullYear(),
     }
   },
   components: {
     NSF,
     RiCaim,
     URI,
-    Brown
+    Brown,
   },
-  computed: mapState(['funding', 'application', 'about'])
+  computed: mapState(['funding', 'application', 'about']),
 }
 </script>

@@ -4,10 +4,10 @@ module.exports = {
       locale: 'en',
       fallbackLocale: 'en',
       localeDir: 'locales',
-      enableInSFC: false
-    }
+      enableInSFC: false,
+    },
   },
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     const svgRule = config.module.rule('svg')
 
     svgRule.uses.clear()
@@ -18,5 +18,5 @@ module.exports = {
       .end()
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
-  }
+  },
 }

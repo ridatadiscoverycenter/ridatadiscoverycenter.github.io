@@ -10,9 +10,7 @@
           <th title="Owner">Owner</th>
           <th title="Station Type">Station Type</th>
           <th title="Status">Status</th>
-          <th title="Dates established in area">
-            Dates established in area
-          </th>
+          <th title="Dates established in area">Dates established in area</th>
           <th title="Seasonal/Year-Round/Extended Season">
             Seasonal/Year-Round/Extended Season
           </th>
@@ -43,7 +41,7 @@
 import { mapState } from 'vuex'
 export default {
   computed: {
-    ...mapState(['resources'])
-  }
+    ...mapState(['resources']),
+  },
 }
 </script>
