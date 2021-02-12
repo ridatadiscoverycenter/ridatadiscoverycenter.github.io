@@ -118,6 +118,17 @@ export default new Vuex.Store({
           'A collection of articles and jupyter notebooks with stories, exploratory data analyses, and code examples using our ERDDAP server data.',
         url: 'https://riddc-jupyter-book.web.app',
       },
+      osom: {
+        name: 'Ocean State Ocean Model',
+        description:
+          'The Ocean State Ocean Model (OSOM) has been developed by URI and Brown Collaborators based on the Regional Ocean Modeling System (ROMS). If you are looking to make comparisons between OSOM output and observational data, it may be helpful to note that OSOM only models a region within latitudes 40.507°N to 42.174°N and longitudes -72.665°W to -69.985°W. The model data is available on ERDDAP, with a subset available for exploration in the Narragansett Bay Data Explorer.',
+        url: 'https://riddc-jupyter-book.web.app',
+        second: 'Narragansett Bay Data Explorer',
+        secondUrl: 'https://data-explorer.riddc.brown.edu/datasets/osom-data',
+        third: 'ERDDAP',
+        thirdURL:
+          'https://pricaimcit.services.brown.edu/erddap/griddap/model_data_57db_4a85_81d9.html',
+      },
       buoy: {
         locations: 'Buoy Locations',
         owners: 'Buoy Owners',

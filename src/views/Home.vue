@@ -56,6 +56,19 @@
         :description="resources.jupyterbook.description"
         :url="resources.jupyterbook.url"
       />
+      <BaseCard
+        class="data-card"
+        :main="resources.osom.name"
+        :icon="['fas', 'water']"
+        :category="resources.data.oceonographic"
+        :description="resources.osom.description"
+        :url="resources.osom.url"
+        :second="resources.osom.second"
+        :secondUrl="resources.osom.secondUrl"
+        :third="resources.osom.third"
+        :thirdUrl="resources.osom.thirdUrl"
+        :beta="resources.osom.beta"
+      />
     </section>
     <section class="map-grid content">
       <aside class="map-grid-side">
