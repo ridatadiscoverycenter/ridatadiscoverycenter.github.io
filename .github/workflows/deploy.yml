@@ -21,15 +21,15 @@ jobs:
         NODE_ENV: production
       run: yarn build
     - name: Deploy to Firebase
-      env: 
+      env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       run: |
-        yarn deploy 
+        yarn deploy
     - name: Deploy to GH Pages
       if: success()
-      uses: crazy-max/ghaction-github-pages@v1
+      uses: crazy-max/ghaction-github-pages@v2
       with:
-        target_branch: master
         build_dir: dist
+        fqdn: ridatadiscovery.org
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
