@@ -1,11 +1,6 @@
 <template>
-  <div class="card">
-    <header class="card-header">
-      <p class="card-header-title">
-        <font-awesome-icon class="card-icon" :icon="icon" />{{ category }}
-      </p>
-    </header>
-    <div class="card-content">
+  <div class="card is-flex is-flex-direction-column is-align-items-stretch">
+    <div class="card-content is-flex-grow-4">
       <p class="title">
         {{ main }}
       </p>
