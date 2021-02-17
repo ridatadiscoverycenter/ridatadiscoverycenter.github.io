@@ -16,7 +16,7 @@
       <p class="card-footer-item">
         <span>
           <a :href="url"
-            >{{ $t('actions.go_to', [main]) }}
+            >{{ main }}
             <font-awesome-icon icon="external-link-alt" />
           </a>
         </span>
@@ -24,7 +24,7 @@
       <p v-if="second" class="card-footer-item">
         <span>
           <a :href="secondUrl"
-            >{{ $t('actions.go_to', [second]) }}
+            >{{ second }}
             <font-awesome-icon icon="external-link-alt" />
           </a>
         </span>
@@ -32,7 +32,7 @@
       <p v-if="third" class="card-footer-item">
         <span>
           <a :href="thirdUrl"
-            >{{ $t('actions.go_to', [third]) }}
+            >{{ third }}
             <font-awesome-icon icon="external-link-alt" />
           </a>
         </span>

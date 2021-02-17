@@ -1,7 +1,6 @@
 {
   "message": "hello i18n !!",
   "actions": {
-    "start_exploring": "Start Exploring",
-    "go_to": "Launch {0}"
+    "start_exploring": "Start Exploring"
   }
 }
