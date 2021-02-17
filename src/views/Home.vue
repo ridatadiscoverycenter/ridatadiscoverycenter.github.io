@@ -23,7 +23,6 @@
         class="data-card"
         :main="resources.buoy_data_viewer.name"
         :icon="['fas', 'water']"
-        :category="resources.data.narr_bay"
         :description="resources.buoy_data_viewer.description"
         :url="resources.buoy_data_viewer.url"
         :second="resources.buoy_data_viewer.second"
@@ -36,7 +35,6 @@
         class="data-card"
         :main="resources.erddap.name"
         :icon="['fas', 'water']"
-        :category="resources.data.oceonographic"
         :description="resources.erddap.description"
         :url="resources.erddap.url"
       />
@@ -44,7 +42,6 @@
         class="data-card"
         :main="resources.plankton.name"
         :icon="['fas', 'calendar-week']"
-        :category="resources.data.time"
         :description="resources.plankton.description"
         :url="resources.plankton.url"
       />
@@ -52,7 +49,6 @@
         class="data-card"
         :main="resources.jupyterbook.name"
         :icon="['fas', 'water']"
-        :category="resources.data.oceonographic"
         :description="resources.jupyterbook.description"
         :url="resources.jupyterbook.url"
       />
@@ -60,7 +56,6 @@
         class="data-card"
         :main="resources.osom.name"
         :icon="['fas', 'water']"
-        :category="resources.data.oceonographic"
         :description="resources.osom.description"
         :url="resources.osom.url"
         :second="resources.osom.second"
