@@ -127,7 +127,7 @@ export default new Vuex.Store({
         second: 'Narragansett Bay Data Explorer',
         secondUrl: 'https://data-explorer.riddc.brown.edu/datasets/osom-data',
         third: 'ERDDAP',
-        thirdURL:
+        thirdUrl:
           'https://pricaimcit.services.brown.edu/erddap/griddap/model_data_57db_4a85_81d9.html',
       },
       buoy: {
