@@ -7,7 +7,6 @@ localVue.component('font-awesome-icon', FontAwesomeIcon)
 
 describe('BaseCard.vue', () => {
   const main = 'test message'
-  const category = 'test category'
   const description = 'test description'
   const icon = ['fas', 'clock']
   const wrapper = shallowMount(BaseCard, {
@@ -17,7 +16,7 @@ describe('BaseCard.vue', () => {
         return { actions: { go_to: 'Go To' } }
       },
     },
-    propsData: { main, category, description, icon },
+    propsData: { main, description, icon },
   })
 
   it('should render card', () => {
