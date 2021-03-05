@@ -27,9 +27,6 @@
         :url="resources.buoy_data_viewer.url"
         :second="resources.buoy_data_viewer.second"
         :secondUrl="resources.buoy_data_viewer.secondUrl"
-        :third="resources.buoy_data_viewer.third"
-        :thirdUrl="resources.buoy_data_viewer.thirdUrl"
-        :beta="resources.buoy_data_viewer.beta"
       />
       <BaseCard
         class="data-card"
@@ -44,6 +41,8 @@
         :icon="['fas', 'calendar-week']"
         :description="resources.plankton.description"
         :url="resources.plankton.url"
+        :second="resources.plankton.second"
+        :secondUrl="resources.plankton.secondUrl"
       />
       <BaseCard
         class="data-card"

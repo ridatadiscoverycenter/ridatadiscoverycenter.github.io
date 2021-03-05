@@ -91,14 +91,12 @@ export default new Vuex.Store({
       },
       buoy_data_viewer: {
         name: 'Narragansett Bay Data Explorer',
-        beta: true,
+        beta: false,
         description:
-          'Explore historical and real-time data about water quality, temperature, and more from the Narragansett Bay. The new Narragansett Bay Data Explorer is in beta, if you find issues leave us a comment or open an issue on the GitHub repo linked below. You can still use the old Buoy Viewer.',
-        secondUrl: 'http://pbuoycit.services.brown.edu/buoyportal',
-        second: 'Buoy Viewer',
+          'Explore historical and real-time data about water quality, temperature, and more from the Narragansett Bay. If you find issues, leave us a comment or open an issue on the GitHub repo linked below.',
+        secondUrl: 'https://github.com/ridatadiscoverycenter/buoy-viewer-nuxt',
+        second: 'GitHub Repo',
         url: 'https://data-explorer.riddc.brown.edu/',
-        third: 'GitHub Repo',
-        thirdUrl: 'https://github.com/ridatadiscoverycenter/buoy-viewer-nuxt',
       },
       erddap: {
         name: 'ERDDAP Server',
@@ -111,6 +109,8 @@ export default new Vuex.Store({
         description:
           'Narragansett Bay Long-Term Plankton Time Series is one of the world’s longest-running plankton surveys. Beginning in 1957, weekly samples have been collected to assess the phytoplankton community and characterize the physical parameters of Narragansett Bay.',
         url: 'https://web.uri.edu/gso/research/plankton/',
+        second: 'Narragansett Bay Data Explorer',
+        secondUrl: 'https://data-explorer.riddc.brown.edu/datasets/plankton',
       },
       jupyterbook: {
         name: 'RIDDC Data Articles',
