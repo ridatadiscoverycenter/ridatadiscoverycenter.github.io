@@ -130,6 +130,15 @@ export default new Vuex.Store({
         thirdUrl:
           'https://pricaimcit.services.brown.edu/erddap/griddap/model_data_57db_4a85_81d9.html',
       },
+      fish_trawl: {
+        name: 'Fish Trawl Survey',
+        description:
+          'The University of Rhode Island Graduate School of Oceanography Fish Trawl Survey is a state-funded survey of the bottom fish and invertebrate community in Narragansett Bay, Rhode Island. The survey was initiated in 1959 by Charles J. Fish, founder and director of the Narragansett Marine Laboratory, the precursor to the Graduate School of Oceanography. The University of Rhode Island Graduate School of Oceanography Fish Trawl Survey is a state funded survey of the bottom fish and invertebrate community in Narragansett Bay, Rhode Island.',
+        url: 'https://web.uri.edu/gso/research/fish-trawl/',
+        second: 'ERDDAP Server',
+        secondUrl:
+          'https://pricaimcit.services.brown.edu/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=fish+trawl',
+      },
       buoy: {
         locations: 'Buoy Locations',
         owners: 'Buoy Owners',
