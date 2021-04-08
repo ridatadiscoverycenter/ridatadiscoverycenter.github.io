@@ -63,6 +63,15 @@
         :thirdUrl="resources.osom.thirdUrl"
         :beta="resources.osom.beta"
       />
+      <BaseCard
+        class="data-card"
+        :main="resources.fish_trawl.name"
+        :icon="['fas', 'calendar-week']"
+        :description="resources.fish_trawl.description"
+        :url="resources.fish_trawl.url"
+        :second="resources.fish_trawl.second"
+        :secondUrl="resources.fish_trawl.secondUrl"
+      />
     </section>
     <section class="map-grid content">
       <aside class="map-grid-side">
