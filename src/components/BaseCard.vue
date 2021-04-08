@@ -1,5 +1,8 @@
 <template>
-  <div class="card is-flex is-flex-direction-column is-align-items-stretch">
+  <div
+    class="card is-flex is-flex-direction-column is-align-items-stretch"
+    :id="kebabCaseTitle"
+  >
     <div class="card-content is-flex-grow-4">
       <p class="title">
         {{ main }}
@@ -74,6 +77,11 @@ export default {
     beta: {
       type: Boolean,
       default: false,
+    },
+  },
+  computed: {
+    kebabCaseTitle() {
+      return this.main.toLowerCase().replace(/\W/g, '-')
     },
   },
 }
