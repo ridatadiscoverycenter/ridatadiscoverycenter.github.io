@@ -142,7 +142,7 @@ export default new Vuex.Store({
       bay_viewer: {
         name: 'Narragansett Bay Volume Viewer',
         description:
-          'The Narragansett Bay Volume Viewer provides an easily accessible and interactive environment to explore and showcase volumetric Narragansett Bay data from the Ocean State Ocean Model with the added benefits of Virtual Reality, if VR-capable hardware is available.',
+          'The Narragansett Bay Volume Viewer provides an accessible and interactive environment to explore and showcase volumetric Narragansett Bay data from the Ocean State Ocean Model with the added benefits of Virtual Reality, if VR-capable hardware is available.',
         url: 'https://bay-viewer.riddc.brown.edu/',
       },
       buoy: {
