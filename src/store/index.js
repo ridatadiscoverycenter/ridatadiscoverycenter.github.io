@@ -139,6 +139,12 @@ export default new Vuex.Store({
         secondUrl:
           'https://pricaimcit.services.brown.edu/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=fish+trawl',
       },
+      bay_viewer: {
+        name: 'Narragansett Bay Volume Viewer',
+        description:
+          'The Narragansett Bay Volume Viewer provides an accessible and interactive environment to explore and showcase volumetric Narragansett Bay data from the Ocean State Ocean Model with the added benefits of Virtual Reality, if VR-capable hardware is available.',
+        url: 'https://bay-viewer.riddc.brown.edu/',
+      },
       buoy: {
         locations: 'Buoy Locations',
         owners: 'Buoy Owners',

@@ -72,6 +72,13 @@
         :second="resources.fish_trawl.second"
         :secondUrl="resources.fish_trawl.secondUrl"
       />
+      <BaseCard
+        class="data-card"
+        :main="resources.bay_viewer.name"
+        :icon="['fas', 'calendar-week']"
+        :description="resources.bay_viewer.description"
+        :url="resources.bay_viewer.url"
+      />
     </section>
     <section class="map-grid content">
       <aside class="map-grid-side">
