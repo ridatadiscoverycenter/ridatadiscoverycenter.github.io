@@ -24,4 +24,3 @@ jobs:
           VUE_APP_MAP_STYLE_LIGHT: ${{ secrets.VUE_APP_MAP_STYLE_LIGHT }}
           VUE_APP_MAP_STYLE_DARK: ${{ secrets.VUE_APP_MAP_STYLE_DARK }}
           NODE_ENV: production
-          NODE_OPTIONS: "--openssl-legacy-provider"
