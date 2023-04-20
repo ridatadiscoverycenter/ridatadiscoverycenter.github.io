@@ -1,4 +1,3 @@
-# riddc-website-vue
 
 ## Project setup
 
