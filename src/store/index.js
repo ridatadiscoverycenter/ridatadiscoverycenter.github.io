@@ -16,7 +16,7 @@ export default new Vuex.Store({
       title: 'Rhode Island Data Discovery Center',
       subtitle:
         'Explore our collection of present and historical data from the Narragansett Bay.',
-      baseURL: 'https://ridatadiscoverycenter.github.io/',
+      baseURL: 'https://riddc.brown.edu/',
       menu: {
         home: 'Home',
         resources: 'Resources',
