@@ -102,7 +102,7 @@ export default new Vuex.Store({
         name: 'ERDDAP Server',
         description:
           'ERDDAP is a data server that gives you a simple, consistent way to download subsets of gridded and tabular scientific datasets in common file formats and make graphs and maps.',
-        url: 'https://pricaimcit.services.brown.edu/erddap/index.html',
+        url: 'https://erddap.riddc.brown.edu/erddap/index.html',
       },
       plankton: {
         name: 'Narragansett Bay Long-Term Plankton Time Series',
@@ -128,7 +128,7 @@ export default new Vuex.Store({
         secondUrl: 'https://data-explorer.riddc.brown.edu/datasets/osom-data',
         third: 'ERDDAP',
         thirdUrl:
-          'https://pricaimcit.services.brown.edu/erddap/griddap/model_data_57db_4a85_81d9.html',
+          'https://erddap.riddc.brown.edu/erddap/griddap/model_data_57db_4a85_81d9.html',
       },
       fish_trawl: {
         name: 'Fish Trawl Survey',
@@ -137,7 +137,7 @@ export default new Vuex.Store({
         url: 'https://web.uri.edu/gso/research/fish-trawl/',
         second: 'ERDDAP',
         secondUrl:
-          'https://pricaimcit.services.brown.edu/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=fish+trawl',
+          'https://erddap.riddc.brown.edu/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=fish+trawl',
       },
       bay_viewer: {
         name: 'Narragansett Bay Volume Viewer',
