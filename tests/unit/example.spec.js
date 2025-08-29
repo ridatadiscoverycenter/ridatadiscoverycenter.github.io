@@ -27,7 +27,7 @@ describe('BaseCard.vue', () => {
   })
   it('should render card with description', () => {
     expect(wrapper.find('.card-content-description').text()).toMatch(
-      description
+      description,
     )
   })
 })
