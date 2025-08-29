@@ -29,8 +29,7 @@ export default new Vuex.Store({
     },
     map: {},
     about: {
-      text:
-        'The National Science Foundation in 2017 awarded the University of Rhode Island with a grant to establish a statewide research consortium — the RI Consortium for Coastal Ecology Assessment, Innovation, and Modeling (RI C-AIM) — to study the effects of climate variability on coastal ecosystems. The RI Data Discovery Center is one of the efforts of RI C-AIM consortium. The goal of the RI Data Discovery Center is to become the national and international go-to-source for data on the Narragansett Bay ecosystem. For C-AIM investigators pursuing the research goals of the Integrated Bay Observatory, Predicting Ecosystem Response and Visualization & Imaging, RI Data Discovery Center will become the site where they will store their data, share their data internally with other C-AIM investigators and share their data externally with investigators around the world. In addition to new data collected by C-AIM investigators, RI Data Discovery Center will also collect and share historical data on the Narragansett Bay ecosystem. In addition to sharing data with scientists, RIDDC will also become the go-to-source where decision makers, land-use managers, relevant industries, citizen scientists and students can find data on the Narragansett Bay ecosystem.',
+      text: 'The National Science Foundation in 2017 awarded the University of Rhode Island with a grant to establish a statewide research consortium — the RI Consortium for Coastal Ecology Assessment, Innovation, and Modeling (RI C-AIM) — to study the effects of climate variability on coastal ecosystems. The RI Data Discovery Center is one of the efforts of RI C-AIM consortium. The goal of the RI Data Discovery Center is to become the national and international go-to-source for data on the Narragansett Bay ecosystem. For C-AIM investigators pursuing the research goals of the Integrated Bay Observatory, Predicting Ecosystem Response and Visualization & Imaging, RI Data Discovery Center will become the site where they will store their data, share their data internally with other C-AIM investigators and share their data externally with investigators around the world. In addition to new data collected by C-AIM investigators, RI Data Discovery Center will also collect and share historical data on the Narragansett Bay ecosystem. In addition to sharing data with scientists, RIDDC will also become the go-to-source where decision makers, land-use managers, relevant industries, citizen scientists and students can find data on the Narragansett Bay ecosystem.',
       contact_email: 'ridatadiscoverycenter@brown.edu',
       leads: {
         text: 'leads',
@@ -85,8 +84,7 @@ export default new Vuex.Store({
         name: 'Buoy Locations',
         description:
           'Here you can find the location and ohter information about the buoys and stations where we collect data.',
-        text:
-          'Buoys were equipped with two sondes that measured temperature, salinity, dissolved oxygen and depth at approximately 1 meter from the bottom and 0.5 meters below the surface. In addition, chlorophyll fluorescence was measured by the near surface sonde. Measurements were collected at fifteen minute intervals and transmitted to shore via cellular modems every eight hours or via radio signal every fifteen minutes.',
+        text: 'Buoys were equipped with two sondes that measured temperature, salinity, dissolved oxygen and depth at approximately 1 meter from the bottom and 0.5 meters below the surface. In addition, chlorophyll fluorescence was measured by the near surface sonde. Measurements were collected at fifteen minute intervals and transmitted to shore via cellular modems every eight hours or via radio signal every fifteen minutes.',
         source: 'http://www.narrbay.org/d_projects/buoy/buoydata.htm',
       },
       buoy_data_viewer: {
@@ -122,8 +120,7 @@ export default new Vuex.Store({
         name: 'Ocean State Ocean Model',
         description:
           'The Ocean State Ocean Model (OSOM) has been developed by URI and Brown Collaborators based on the Regional Ocean Modeling System (ROMS). If you are looking to make comparisons between OSOM output and observational data, it may be helpful to note that OSOM only models a region within latitudes 40.507°N to 42.174°N and longitudes -72.665°W to -69.985°W. The model data is available on ERDDAP, with a subset available for exploration in the Narragansett Bay Data Explorer.',
-        url:
-          'https://riddc-jupyter-book.web.app/notebooks/fox-kemper/osom_intro.html#',
+        url: 'https://riddc-jupyter-book.web.app/notebooks/fox-kemper/osom_intro.html#',
         second: 'Narragansett Bay Data Explorer',
         secondUrl: 'https://data-explorer.riddc.brown.edu/datasets/osom-data',
         third: 'ERDDAP',
